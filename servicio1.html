@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Manos al Hogar: mantenimiento y pequeñas reparaciones domésticas.">
+  <title>Manos al Hogar | Buen Día</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css"><script src="script.js" defer></script>
+</head>
+<body>
+  <div class="announcement"><span class="announcement-dot"></span> SERVICIO 01 <span class="announcement-divider">/</span> MANOS AL HOGAR</div>
+  <header class="site-header"><a class="brand" href="index.html"><span class="brand-mark">b.</span><span>buendía<span class="brand-period">.</span></span></a><button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false"><span></span><span></span></button><nav class="main-nav"><a class="nav-link" href="index.html">Inicio</a><a class="nav-link active" href="servicio1.html">Manos al Hogar</a><a class="nav-link" href="servicio2.html">Mesa Lista</a><a class="nav-link nav-cta" href="#solicitar">Solicitar servicio <span>↗</span></a></nav></header>
+  <main>
+    <section class="detail-hero">
+      <div class="detail-copy"><a class="back-link" href="index.html">← Volver a servicios</a><p class="eyebrow"><span class="eyebrow-line"></span> MANTENIMIENTO DOMÉSTICO</p><h1>Tu casa pide<br><em>una mano.</em></h1><p class="hero-description">Ese cajón que no cierra, la grifería que gotea o el mueble que sigue en su caja. Resolvemos esos pendientes domésticos que se acumulan cuando no tienes tiempo o herramientas.</p><a class="button button-dark" href="#solicitar">Consultar disponibilidad <span>↗</span></a><div class="detail-facts"><div><strong>01</strong><span>Atención coordinada</span></div><div><strong>02</strong><span>Alcance claro</span></div><div><strong>03</strong><span>Precio acordado</span></div></div></div>
+      <div class="detail-visual"><img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=1200&q=85" alt="Trabajo de mantenimiento en el hogar"><div class="visual-caption"><span>MANOS AL HOGAR</span><strong>Pequeños arreglos,<br>gran tranquilidad.</strong></div><div class="visual-circle">CUIDAMOS<br>TU ESPACIO <b>✳</b></div></div>
+    </section>
+    <section class="section detail-services"><div class="section-heading"><div><p class="eyebrow"><span class="eyebrow-line"></span> QUÉ PODEMOS HACER</p><h2>Los pendientes<br><em>dejan de esperar.</em></h2></div><p class="section-intro">Un servicio pensado para tareas pequeñas y frecuentes. Antes de aceptar, revisamos contigo si el trabajo está dentro del alcance.</p></div>
+      <div class="offer-grid">
+        <article class="offer"><span class="offer-icon">⌂</span><span class="offer-index">01</span><h3>Instalaciones sencillas</h3><p>Colocación de repisas, cortineros, cuadros, soportes y accesorios domésticos.</p></article>
+        <article class="offer"><span class="offer-icon">⌁</span><span class="offer-index">02</span><h3>Ajustes y reparaciones</h3><p>Ajuste de bisagras, manijas, puertas, cajones y muebles que necesitan mantenimiento.</p></article>
+        <article class="offer"><span class="offer-icon">◉</span><span class="offer-index">03</span><h3>Revisión básica</h3><p>Identificación inicial de problemas visibles en grifos, sifones y accesorios del hogar.</p></article>
+        <article class="offer"><span class="offer-icon">▤</span><span class="offer-index">04</span><h3>Montaje de muebles</h3><p>Armado de muebles domésticos siguiendo las instrucciones del fabricante.</p></article>
+      </div>
+      <p class="scope-note"><strong>Importante:</strong> no se realizan trabajos eléctricos, de gas, estructurales ni reparaciones que requieran matrícula o especialización. Si detectamos un riesgo, recomendamos acudir a un profesional habilitado.</p>
+    </section>
+    <section class="split-section"><div class="split-photo"><img src="https://images.unsplash.com/photo-158157873_industrial?auto=format&fit=crop&w=1000&q=80" alt="Herramientas organizadas para realizar reparaciones" onerror="this.src='https://images.unsplash.com/photo-1504148455328-c376907d081c?auto=format&fit=crop&w=1000&q=85'"></div><div class="split-copy"><p class="eyebrow">NUESTRA FORMA DE TRABAJAR</p><h2>Primero claridad.<br><em>Después, manos a la obra.</em></h2><div class="promise-list"><div><b>01</b><span><strong>Nos explicas el problema</strong><small>Con una descripción y, si puedes, una fotografía.</small></span></div><div><b>02</b><span><strong>Revisamos el alcance</strong><small>Te indicamos qué podemos hacer y qué materiales harían falta.</small></span></div><div><b>03</b><span><strong>Acordamos antes de empezar</strong><small>Precio estimado, horario y condiciones quedan claros.</small></span></div></div></div></section>
+    <section class="section request-section" id="solicitar"><div class="request-panel"><div><p class="eyebrow">HAGAMOS ESPACIO EN TU LISTA</p><h2>¿Qué necesita<br><em>tu hogar?</em></h2><p>Cuéntanos brevemente qué hay que reparar o instalar. Esta demostración prepara un mensaje de consulta; no realiza una reserva real.</p><div class="request-contact"><span>✉</span> hola@buendia.example</div></div><form class="request-form" id="service-form" data-service="Manos al Hogar"><label for="name">Tu nombre</label><input id="name" name="name" required placeholder="¿Cómo te llamas?"><label for="need">¿Qué necesitas?</label><textarea id="need" name="need" rows="4" required placeholder="Ej. Necesito instalar dos repisas..."></textarea><label for="zone">Zona o barrio</label><input id="zone" name="zone" placeholder="Ej. Equipetrol, Centro..."><button class="button button-dark" type="submit">Preparar consulta <span>↗</span></button><p class="form-feedback" aria-live="polite"></p></form></div></section>
+  </main>
+  <footer class="site-footer"><a class="brand brand-footer" href="index.html"><span class="brand-mark">b.</span><span>buendía<span class="brand-period">.</span></span></a><p>Servicios cotidianos, hechos con cuidado.</p><span>© <span id="year"></span> BUENDÍA · SERVICIO 01</span></footer>
+</body></html>
