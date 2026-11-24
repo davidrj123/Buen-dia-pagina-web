@@ -1,0 +1,46 @@
+/* Mesa Lista: menú semanal */
+.ml-filter-bar{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 30px}
+.ml-filter{border:1px solid var(--line);background:transparent;color:var(--muted);border-radius:30px;padding:10px 18px;font:600 11px var(--sans);cursor:pointer}
+.ml-filter.is-active{background:var(--ink);border-color:var(--ink);color:#fff}
+.ml-menu-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px}
+.ml-dish{display:grid;grid-template-columns:.88fr 1.12fr;background:var(--paper);min-height:250px;transition:transform .2s,box-shadow .2s}
+.ml-dish:hover{transform:translateY(-4px);box-shadow:0 14px 35px #20251f12}
+.ml-dish.is-hidden{display:none}
+.ml-dish-photo{min-height:250px;position:relative;overflow:hidden}
+.ml-dish-photo img{transition:transform .5s}
+.ml-dish:hover .ml-dish-photo img{transform:scale(1.04)}
+.ml-dish-label{position:absolute;left:12px;top:12px;background:var(--peach);color:#805d4b;padding:6px 9px;font-size:8px;font-weight:700;letter-spacing:.1em}
+.ml-label-green{background:var(--sage);color:var(--sage-deep)}
+.ml-dish-body{padding:21px;display:flex;flex-direction:column}
+.ml-dish-top{display:flex;justify-content:space-between;gap:8px;align-items:center;color:var(--muted);font-size:8px;letter-spacing:.1em;font-weight:700}
+.ml-dish-top strong{color:var(--orange);font:800 17px var(--display);white-space:nowrap}
+.ml-dish h3{font:800 19px/1.2 var(--display);margin:19px 0 8px}
+.ml-dish-body>p{color:var(--muted);font-size:10px;line-height:1.8;margin:0}
+.ml-dish-bottom{margin-top:auto;padding-top:18px;display:flex;align-items:end;justify-content:space-between;gap:8px}
+.ml-dish-bottom small{color:#8a9087;font-size:8px}
+.ml-select-dish{border:0;background:var(--sage);color:var(--ink);padding:9px 11px;font:700 9px var(--sans);cursor:pointer;white-space:nowrap}
+.ml-select-dish:hover{background:var(--sage-deep);color:#fff}
+.ml-menu-footnote{color:var(--muted);font-size:9px;margin:22px 0 0}
+@media(max-width:850px){.ml-menu-grid{grid-template-columns:1fr}}
+@media(max-width:520px){.ml-dish{grid-template-columns:1fr}.ml-dish-photo{min-height:190px;height:190px}.ml-dish-body{min-height:205px}}
+
+/* Mesa Lista: planificador y estimación */
+.ml-planner-section{background:#f0f1eb}
+.ml-planner{display:grid;grid-template-columns:1.1fr .9fr;gap:35px;background:#fff;padding:36px;box-shadow:0 18px 50px #20251f0b}
+.ml-planner-form{display:flex;flex-direction:column}
+.ml-planner-form label{font-size:10px;font-weight:700;margin:0 0 8px}
+.ml-planner-form select{width:100%;padding:13px 14px;margin-bottom:23px;border:1px solid var(--line);background:#fbfcf9;color:var(--ink);font:12px var(--sans)}
+.ml-quantity-control{display:flex;align-items:center;gap:18px;margin:0 0 10px}
+.ml-quantity-control button{width:34px;height:34px;border:0;border-radius:50%;background:var(--sage);font-size:19px;cursor:pointer}
+.ml-quantity-control output{min-width:22px;text-align:center;font:800 20px var(--display)}
+#ml-portions{width:100%;accent-color:var(--sage-deep);margin:0 0 25px}
+.ml-planner-note{color:var(--muted);font-size:9px;line-height:1.7}
+.ml-estimate{background:var(--sage);padding:28px;display:flex;flex-direction:column;align-items:flex-start}
+.ml-estimate-kicker{font-size:9px;font-weight:700;letter-spacing:.15em;color:var(--sage-deep)}
+.ml-estimate>strong{font:800 clamp(38px,5vw,58px)/1.2 var(--display);letter-spacing:-2px;margin:10px 0 22px}
+.ml-estimate-line{width:100%;display:flex;justify-content:space-between;padding:10px 0;border-top:1px solid #c4d1be;font-size:10px}
+.ml-estimate-line span{color:#667663}
+.ml-estimate-divider{width:100%;border-top:1px solid #aebfa8;margin:9px 0 15px}
+.ml-estimate>p{color:#61715e;font-size:10px;line-height:1.7}
+.ml-copy-order{width:100%;justify-content:space-between;margin-top:8px}
+@media(max-width:700px){.ml-planner{grid-template-columns:1fr;padding:23px}}
